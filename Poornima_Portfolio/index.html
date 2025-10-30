@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poornima K | Portfolio</title>
+  <style>
+    /* ===== GENERAL STYLES ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f8f9ff, #e7efff);
+      color: #333;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(120deg, #c7d2fe, #e0e7ff);
+      border-bottom: 2px solid #d1d5fa;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: #dbeafe;
+      display: block;
+      margin: 0 auto 15px;
+      object-fit: cover;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    header h1 {
+      font-size: 2em;
+      font-weight: 600;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #555;
+      margin-top: 8px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #4f46e5;
+      margin-bottom: 20px;
+      border-left: 4px solid #6366f1;
+      padding-left: 10px;
+    }
+
+    .skills, .projects, .certifications, .education {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f9fafc;
+      padding: 20px;
+      border-radius: 12px;
+      transition: all 0.4s ease;
+      transform: scale(1);
+    }
+
+    .card:hover {
+      background: #eef2ff;
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.15);
+    }
+
+    .card h3 {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      color: #4338ca;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+      transition: 0.4s ease;
+      text-align: center;
+    }
+
+    .card:hover .icon {
+      transform: rotate(10deg) scale(1.2);
+      filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.3));
+    }
+
+    .blue { color: #3b82f6; }
+    .green { color: #10b981; }
+    .orange { color: #f97316; }
+    .pink { color: #ec4899; }
+    .teal { color: #14b8a6; }
+    .gold { color: #facc15; }
+
+    ul {
+      list-style: none;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #e0e7ff;
+      font-size: 0.95em;
+      color: #555;
+      letter-spacing: 0.5px;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+      section {
+        padding: 25px;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a2e0b1e6a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <img src="your-photo.jpg" alt="Your Photo Placeholder">
+    <h1>Poornima K</h1>
+    <p>Electronics & Communication Engineer | UI/UX Enthusiast | Embedded Systems Learner</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Motivated Electronics and Communication Engineering student from K. Ramakrishnan College of Engineering, Trichy.
+      Passionate about embedded systems, programming, and user-centric design. I enjoy transforming ideas into
+      meaningful solutions and learning emerging technologies like AI, cloud, and IoT.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Programming</h3>
+        <ul>
+          <li>C, C++, Python</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Time Management</li>
+          <li>Problem Solving</li>
+          <li>Team Building</li>
+          <li>Calm Under Pressure</li>
+          <li>Adaptable & Flexible</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Design Tools</h3>
+        <ul>
+          <li>Figma (Beginner)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <div class="icon blue"><i class="fas fa-microchip"></i></div>
+        <h3>Voice-Controlled Smart Board</h3>
+        <p>Arduino-based system to control appliances using voice commands via Bluetooth for accessible and safe operation.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon green"><i class="fas fa-leaf"></i></div>
+        <h3>Ripeness Sensing Bags</h3>
+        <p>Eco-friendly biodegradable bag that detects fruit ripeness for sustainable food monitoring.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon orange"><i class="fas fa-book"></i></div>
+        <h3>Bookstore Management System</h3>
+        <p>Database-driven system with login, inventory, and sales management using PHP, MySQL, HTML, and CSS.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon pink"><i class="fas fa-child"></i></div>
+        <h3>Child Management System</h3>
+        <p>Python-based record management system with CRUD operations, JSON storage, and user-friendly menu interface.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon teal"><i class="fas fa-sitemap"></i></div>
+        <h3>Expression Tree Evaluation</h3>
+        <p>Mathematical expression evaluation using stack-based traversal and postfix notation.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon gold"><i class="fas fa-piggy-bank"></i></div>
+        <h3>ATM Simulation</h3>
+        <p>Java console-based simulation demonstrating OOP concepts like inheritance, polymorphism, and encapsulation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications & Workshops</h2>
+    <div class="certifications">
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul>
+          <li>Python Zero to Hero – GUVI</li>
+          <li>Generative AI – GUVI</li>
+          <li>Cloud Computing (In Progress) – Edutantr</li>
+          <li>UI/UX Design (In Progress) – Novitech</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Workshops</h3>
+        <ul>
+          <li>UI/UX Workshop – NIT Trichy</li>
+          <li>ARM Microcontroller – Rajan Robotics</li>
+          <li>Electronics Workshop – LIFT India</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <div class="card">
+        <h3>B.E. Electronics and Communication</h3>
+        <p>K. Ramakrishnan College of Engineering (2027)</p>
+        <p>CGPA: 8.2</p>
+      </div>
+      <div class="card">
+        <h3>HSC</h3>
+        <p>AKKV Aarunadu Matric Hr. Sec. School (2023)</p>
+        <p>Percentage: 85.83%</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>📧 <strong>Email:</strong> k.poornima1310@gmail.com</p>
+    <p>📱 <strong>Phone:</strong> +91 70921 77749</p>
+    <p>📍 Trichy, Tamil Nadu</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Poornima K — Designed with ❤️ by Poornima</p>
+  </footer>
+
+  <script>
+    // Reveal animation on scroll
+    const sections = document.querySelectorAll("section");
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          sec.classList.add("visible");
+        }
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
